@@ -1,3 +1,4 @@
+import java.time.Instant;
 import java.util.ArrayList;
 
 public class Note {
@@ -44,4 +45,16 @@ public class Note {
     public void setHistorique(ArrayList<Object[]> historique) {
         this.historique = historique;
     }
+
+    public float changeLaNote(float valeur, String description) {
+        Instant date=Instant.now();
+        note = valeur;
+        Object[] array =new Object[3];
+        array[0]=valeur;
+        array[1]=description;
+        array[2]= date;
+        getHistorique().add(array);
+        return valeur;
+    }
+
 }
