@@ -56,5 +56,4 @@ public class Note {
         getHistorique().add(array);
         return valeur;
     }
-
 }

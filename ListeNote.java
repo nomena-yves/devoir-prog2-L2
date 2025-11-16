@@ -32,4 +32,24 @@ public class ListeNote {
    }
    return 0;
     };
+
+    public double getCourseGrade(Cours cours, Etudiants etudiant2, Instant t){
+        double number=0;
+        double total=0;
+        for(int i = 0; i<notes.size(); i++){
+            Note note = notes.get(i);
+            if(note.getExamen().getCours().equals(cours)&&note.getEtudiant().equals(etudiant2)){
+                for(Object o: note.getHistorique()){
+                    Object[] tableau = (Object[]) o;
+                    for(int j = 0; j<tableau.length; j++){
+                        if(tableau[j].equals(t)){
+                            total+=note.getExamen().getCoefficient();
+                            number+= (Double) tableau[0]*note.getExamen().getCoefficient() ;
+                        }
+                    }
+                }
+            }
+        }
+        return number/total;
+    }
 }
