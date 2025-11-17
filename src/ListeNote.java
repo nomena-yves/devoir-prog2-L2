@@ -18,7 +18,7 @@ public class ListeNote {
         this.notes = notes;
     }
 
-    double getExamGrade(Examen exam, Etudiants etudiant1, Instant t){
+   public double getExamGrade(Examen exam, Etudiants etudiant1, Instant t){
    for(int i = 0; i<notes.size(); i++){
     Note note = notes.get(i);
   if(note.getExamen().equals(exam)&&note.getEtudiant().equals(etudiant1)){

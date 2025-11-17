@@ -16,5 +16,6 @@ class NoteTest {
         Cours Prog2=new Cours(4,"Prog2",6,Toky);
         Examen ExamenProg2 =new Examen(1,"Premiere Evaluation",Prog2,Instant.parse("2023-05-10T12:30:00Z"),6);
         Note note1=new Note(Nomena,ExamenProg2,0);
+        note1.changeLaNote(14.3,"ajouter le bonus");
     }
 }

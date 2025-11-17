@@ -48,7 +48,7 @@ public class Note {
         this.historique = historique;
     }
 
-    public float changeLaNote(float valeur, String description) {
+    public double changeLaNote(double valeur, String description) {
         Instant date=Instant.now();
         note = valeur;
         Object[] array =new Object[3];
@@ -56,6 +56,7 @@ public class Note {
         array[1]=description;
         array[2]= date;
         getHistorique().add(array);
+        System.out.println("changement de la note");
         return valeur;
     }
 }

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="junit-jupiter-engine-5.10.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar!/" />
+      <root url="file://$MAVEN_REPOSITORY$/org/junit/platform" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
