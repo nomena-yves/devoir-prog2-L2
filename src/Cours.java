@@ -1,3 +1,5 @@
+package src;
+
 public class Cours {
     private int id_cours;
     private String label;

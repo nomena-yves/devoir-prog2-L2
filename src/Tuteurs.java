@@ -1,30 +1,32 @@
+package src;
+
 import java.time.Instant;
 
-public class Professeurs {
-    private int id_professeur;
+public class Tuteurs {
+    private int id_tuteur;
     private String nom;
     private String prenom;
     private Instant date_naissance;
     private String email;
     private String telephone;
-    private String specialite;
+    private String description_lien;
 
-    public Professeurs(int id_professeur, String nom, String prenom, Instant date_naissance, String email, String telephone, String specialite) {
-        this.id_professeur = id_professeur;
+    public Tuteurs(int id_tuteur, String nom, String prenom, Instant date_naissance, String email, String telephone, String description_lien) {
+        this.id_tuteur = id_tuteur;
         this.nom = nom;
         this.prenom = prenom;
         this.date_naissance = date_naissance;
         this.email = email;
         this.telephone = telephone;
-        this.specialite = specialite;
+        this.description_lien = description_lien;
     }
 
-    public int getId_professeur() {
-        return id_professeur;
+    public int getId_tuteur() {
+        return id_tuteur;
     }
 
-    public void setId_tuteur(int id_professeur) {
-        this.id_professeur = id_professeur;
+    public void setId_tuteur(int id_tuteur) {
+        this.id_tuteur = id_tuteur;
     }
 
     public String getNom() {
@@ -67,11 +69,11 @@ public class Professeurs {
         this.telephone = telephone;
     }
 
-    public String getSpecialite() {
-        return specialite;
+    public String getDescription_lien() {
+        return description_lien;
     }
 
-    public void setSpecialite(String specialite) {
-        this.specialite = specialite;
+    public void setDescription_lien(String description_lien) {
+        this.description_lien = description_lien;
     }
 }
